@@ -1,0 +1,90 @@
+body{
+    margin: 0;
+    padding:0;
+}
+.nav
+{
+    width: 100%;
+    height: 50px;
+    /* background-color: rgb(13, 29, 78); */
+    background-color: #0f0f5e;
+    color: white;
+    display: flex;
+    justify-content: left;
+}
+.info div{
+    margin: 10px;
+    padding: 5px;
+}
+.info{
+    height: 50px;
+    width: 370px;
+    display: flex;
+    position: absolute;
+    right: 1px;
+}
+.name{
+    padding: 10px;
+    font-family: 'Protest Revolution', sans-serif;
+    font-size: 30px;
+}
+.name a{
+    text-decoration: none;
+    color: white;
+}
+.info div:hover{
+    background-color:#f7c746;
+    color: #0f0f5e;
+    border-radius: 4px;
+}
+#check{
+    display: none;
+}
+.btn_one{
+    position: absolute;
+    display: none;
+    right: 12px;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 4px;
+    background-color: #f7c746;
+}
+.drop div{
+    width: 100%;
+    background-color:#0f0f5e;
+    text-align: center;
+    height: 20px;
+    padding: 10px;
+    color: white;
+}
+.drop{
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    top: -150px;
+    z-index: -1;
+    transition: all 0.3s linear;
+    display: flex;
+    flex-direction: column;
+}
+.drop div:hover{
+    background-color: #f7c746;
+    color: #0f0f5e;
+}
+
+
+
+@media screen and (max-width:650px){
+    .info{
+        display: none;
+    }
+    .btn_one{
+        display: flex;
+    }
+    #check:checked + .drop{
+            display: flex;
+            top: 50px;
+            
+    }
+
+}
